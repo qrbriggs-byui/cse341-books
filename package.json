@@ -1,0 +1,31 @@
+{
+  "name": "cse341-books",
+  "version": "1.0.0",
+  "description": "Books for CSE 341",
+  "homepage": "https://github.com/qrbriggs-byui/cse341-books#readme",
+  "bugs": {
+    "url": "https://github.com/qrbriggs-byui/cse341-books/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qrbriggs-byui/cse341-books.git"
+  },
+  "license": "ISC",
+  "author": "Quinn Briggs",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "nodemon --env-file=.env server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.9.1",
+    "nodemon": "^3.1.14"
+  }
+}
