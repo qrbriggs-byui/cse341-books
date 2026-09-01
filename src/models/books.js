@@ -8,4 +8,14 @@ const getAllBooks = async () => {
   return books;
 };
 
-export { getAllBooks };
+const getBookById = async (id) => {
+  const database = getDb();
+  const booksCollection = database.collection('books');
+  const book = await booksCollection.findOne({ id: id });
+
+  return book;
+
+};
+
+export { getAllBooks, getBookById };
+
